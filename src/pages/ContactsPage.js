@@ -9,7 +9,7 @@ export default class ContactsPage extends Component {
         this.state = {
             atender:[
                 {
-                    nombre:'Daniel',
+                    nombre:'Jhon',
                     foto:'https://images.pexels.com/photos/3098734/pexels-photo-3098734.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
                 },
                 {
