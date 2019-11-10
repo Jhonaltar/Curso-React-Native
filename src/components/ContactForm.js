@@ -6,7 +6,10 @@ const ContactForm = () => {
     const [correo, setCorreo] = useState('');
     const [telefono, setTelefono] = useState('');
     const handleSubmit = () => {
+        //alert(nombres,correo,telefono);
         alert(nombres);
+        alert(correo);
+        alert(telefono);
     }
     return (
         <View>
@@ -15,6 +18,18 @@ const ContactForm = () => {
                 label='Nombres'
                 value={nombres}
                 onChangeText={e => setNombres(e)}
+            />
+            <Text style={{ fontSize: 40 }}>{correo}</Text>
+            <TextInput
+                label='Correo'
+                value={correo}
+                onChangeText={e => setCorreo(e)}
+            />
+            <Text style={{ fontSize: 40 }}>{telefono}</Text>
+            <TextInput
+                label='Telefono'
+                value={telefono}
+                onChangeText={e => setTelefono(e)}
             />
             <Button mode="contained" onPress={handleSubmit}>
                 Guardar
